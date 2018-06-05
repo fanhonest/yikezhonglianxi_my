@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        //禁止手动侧滑
+
+
+        main_Drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
         bottom_tab_bar.init(getSupportFragmentManager())
                 .setImgSize(50, 50)
