@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/main_Drawer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fan.com.yikezhong.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4">
+            <ImageView
+                android:id="@+id/touxiang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/touxiang" />
+            <TextView
+                android:id="@+id/main_text_biaoti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/edit_query"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/raw_1500034665" />
+        </LinearLayout>
+        <com.hjm.bottomtabbar.BottomTabBar
+        android:layout_weight="1"
+            android:id="@+id/bottom_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </com.hjm.bottomtabbar.BottomTabBar>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_rigt"
+        android:layout_gravity="start"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            />
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
